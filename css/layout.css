@@ -1,0 +1,226 @@
+@media (max-width: 882px) {
+  .navbar-collapse,
+  .navbar-collapse.collapse.show {
+    transition: none !important;
+    margin-top: 9px;
+    border-top: 1px solid rgb(244, 242, 242);
+  }
+  nav ul:not(.what-happen) {
+    padding-left: 30px;
+    line-height: 35px;
+  }
+  nav .active {
+    color: var(--sec-color) !important;
+    margin-top: 15px !important;
+  }
+  ul.what-happen {
+    width: 100% !important;
+  }
+  ul.what-happen li {
+    width: 100% !important;
+    display: flex !important;
+    justify-content: center;
+  }
+  ul.what-happen .my-btn,
+  ul.what-happen .my-sign {
+    width: 85% !important;
+    padding-block: 8px !important;
+  }
+  ul.what-happen .my-sign {
+    border: 0.0625rem solid rgb(234, 233, 233);
+    border-radius: 20px;
+  }
+  nav .drop {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 30px;
+  }
+  .logo {
+    padding-left: 10px !important;
+    padding-block: 5px !important ;
+  }
+  nav .dropdown-menu {
+    max-height: 45vh;
+    overflow-y: auto;
+    scrollbar-width: thin;
+    position: static !important;
+    transform: none !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+    box-shadow: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    width: fit-content !important;
+  }
+  .sec-1 {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
+  padding-left: 20px !important;
+  padding-right: 20px !important;
+  box-sizing: border-box !important;
+}
+
+.sec-1 .rotate {
+  width: 95% !important; 
+  height: auto !important;
+  min-height: 340px !important; 
+  margin: 30px auto !important;
+}
+
+.sec-1 .img {
+  width: 100% !important;
+  height: 100% !important;
+  padding: 16px !important;
+  box-sizing: border-box !important;
+}
+
+.sec-1 .img img {
+  width: 100% !important;
+  height: 100% !important;
+  max-height: 320px !important; 
+  object-fit: cover !important;
+}
+
+.sec-1 .buttons {
+  width: 100% !important;
+  display: flex !important;
+  justify-content: center !important;
+}
+
+.sec-1 .buttons button {
+  width: 85% !important;
+  padding-block: 12px !important;
+  margin-block: 12px !important;
+  margin-inline: auto !important;
+  display: block !important;
+}
+
+.sec-1 span.span-img {
+  font-size: 18px !important;
+}
+
+.sec-1 .span-img.s1 {
+  top: -15px !important;
+  right: -15px !important;
+  padding: 18px 22px !important;
+  border-radius: 15px !important;
+  background: linear-gradient(120deg, #f78533 0%, #ee6419 90%) !important;
+}
+
+.sec-1 .span-img.s2 {
+  bottom: -15px !important;
+  left: -15px !important;
+  padding: 16px 20px !important;
+  border-radius: 15px !important;
+  background: linear-gradient(120deg, #cb470d 0%, #e4540c 90%) !important;
+}
+  h2 {
+    font-size: 25px !important;
+  }
+  .disc {
+    width: 100% !important;
+  }
+  .w-70 {
+  width: 100% !important;
+}
+
+
+.mycard .card-body {
+  padding: 2.5rem !important;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: space-between !important;
+}
+
+
+.mycard .card-body > .d-flex.justify-content-between {
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: flex-start !important;
+  gap: 12px !important;
+  margin-bottom: 25px !important;
+}
+
+
+.mycard .card-body p,
+.mycard .card-body > div:nth-child(2) {
+  margin-bottom: 35px !important;
+  line-height: 1.6 !important;
+}
+
+
+.mycard .card-body > div:last-child {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 100% !important;
+  text-align: center !important;
+  margin-top: auto !important;
+  gap: 20px !important;
+}
+
+
+.mycard .card-body > div:last-child > .d-flex {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 100% !important;
+  text-align: center !important;
+}
+
+
+.mycard .w-img-card {
+  width: 80px !important;
+  height: 80px !important;
+  object-fit: cover !important;
+  border-radius: 50% !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  margin-bottom: 10px !important;
+}
+
+
+.mycard .card-body > div:last-child > div:last-child {
+  display: none !important;
+}
+ 
+  .sec-5 .-mybtn {
+    font-size: 10px;
+    padding: 17px 10px 17px 0px;
+    font-weight: 700;
+  }
+  .sec-5 .-mybtn span.icon-drop {
+    padding: 4px 5px;
+  }
+}
+
+@media (min-width: 883px) {
+  ul.my-list li {
+    margin-left: 20px !important;
+  }
+
+  nav .ref_sec a {
+    position: relative;
+    display: inline-block;
+    padding-inline: 0;
+  }
+  nav .ref_sec a::after {
+    content: "";
+    position: absolute;
+    left: 8px;
+    bottom: 3px;
+    height: 2px;
+    background: var(--linear-main) !important;
+    width: 0;
+    transition: all 0.48s;
+  }
+
+  nav .ref_sec a.active::after {
+    width: 78%;
+  }
+}
