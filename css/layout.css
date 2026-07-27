@@ -128,13 +128,36 @@
 }
 
 
+
 .mycard .card-body {
-  padding: 2.5rem !important;
+  padding: 1.5rem !important;
   display: flex !important;
   flex-direction: column !important;
-  justify-content: space-between !important;
+  align-items: flex-start !important;
+  justify-content: flex-start !important;
 }
 
+
+.mycard .card-body > span.icon-sec2,
+.mycard .card-body > span:first-child {
+  width: 56px !important;
+  height: 56px !important;
+  min-width: 56px !important;
+  min-height: 56px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  border-radius: 14px !important; 
+  flex-shrink: 0 !important;
+  align-self: flex-start !important;
+  margin-bottom: 1rem !important;
+}
+
+
+.mycard .card-body > span.icon-sec2 i,
+.mycard .card-body > span:first-child i {
+  font-size: 1.6rem !important;
+}
 
 .mycard .card-body > .d-flex.justify-content-between {
   display: flex !important;
@@ -145,14 +168,18 @@
 }
 
 
-.mycard .card-body p,
-.mycard .card-body > div:nth-child(2) {
-  margin-bottom: 35px !important;
-  line-height: 1.6 !important;
+.mycard .card-body h4 {
+  margin-bottom: 0.5rem !important;
+}
+
+.mycard .card-body > p {
+  font-size: 0.9rem !important;
+  line-height: 1.5 !important;
+  margin-bottom: 1.25rem !important;
 }
 
 
-.mycard .card-body > div:last-child {
+.mycard .card-body > div:last-child:not(.flex-wrap) {
   display: flex !important;
   flex-direction: column !important;
   align-items: center !important;
@@ -163,8 +190,7 @@
   gap: 20px !important;
 }
 
-
-.mycard .card-body > div:last-child > .d-flex {
+.mycard .card-body > div:last-child:not(.flex-wrap) > .d-flex {
   display: flex !important;
   flex-direction: column !important;
   align-items: center !important;
@@ -172,7 +198,6 @@
   width: 100% !important;
   text-align: center !important;
 }
-
 
 .mycard .w-img-card {
   width: 80px !important;
@@ -184,16 +209,38 @@
   margin-bottom: 10px !important;
 }
 
-
-.mycard .card-body > div:last-child > div:last-child {
+.mycard .card-body > div:last-child:not(.flex-wrap) > div:last-child {
   display: none !important;
 }
- 
-  .sec-5 .-mybtn {
-    font-size: 10px;
-    padding: 17px 10px 17px 0px;
-    font-weight: 700;
-  }
+
+
+.mycard .card-body > div.flex-wrap {
+  display: flex !important;
+  flex-direction: row !important;
+  flex-wrap: wrap !important;
+  align-items: center !important;
+  justify-content: flex-start !important;
+  gap: 8px !important;
+  margin-top: auto !important;
+  width: 100% !important;
+}
+
+
+.mycard .card-body .font-span-sec-3 {
+  font-size: 0.75rem !important;
+  font-weight: 500 !important;
+  padding: 4px 10px !important;
+  border-radius: 50px !important;
+  white-space: nowrap !important;
+  display: inline-block !important;
+}
+
+
+.sec-5 .-mybtn {
+  font-size: 10px;
+  padding: 17px 10px 17px 0px;
+  font-weight: 700;
+}
   .sec-5 .-mybtn span.icon-drop {
     padding: 4px 5px;
   }
@@ -222,5 +269,32 @@
 
   nav .ref_sec a.active::after {
     width: 78%;
+  }
+}
+
+@media (min-width: 992px) {
+  .sec-5 .container,
+  .sec-5 .container-fluid {
+    padding-left: 300px !important;
+    padding-right: 300px !important;
+  }
+
+  .sec-5 .-mybtn {
+    padding: 22px 28px !important;
+  }
+
+  .sec-5 .-mybtn span.icon-drop {
+    width: 44px;
+    height: 44px;
+    min-width: 44px;
+  }
+
+  .sec-6 .part1 {
+    border-radius: 24px 0 0 24px !important;
+  }
+  
+  .sec-6 .part2 {
+    border-radius: 0 24px 24px 0 !important;
+    padding: 50px !important;
   }
 }

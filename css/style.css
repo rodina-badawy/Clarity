@@ -13,6 +13,7 @@
 *:before {
   box-sizing: border-box;
 }
+
 body {
   font-family: Inter, sans-serif;
   scroll-behavior: smooth;
@@ -504,6 +505,132 @@ nav .dropdown-menu .box {
   margin-right: auto !important;
 }
 
+
+.mycard .card-body {
+  padding: 1.5rem !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: flex-start !important;
+  justify-content: flex-start !important;
+}
+
+
+.mycard .card-body > span.icon-sec2,
+.mycard .card-body > span:first-child {
+  width: 56px !important;
+  height: 56px !important;
+  min-width: 56px !important;
+  min-height: 56px !important;
+  max-width: 56px !important; 
+  max-height: 56px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  border-radius: 14px !important;
+  flex: 0 0 56px !important;   
+  align-self: flex-start !important;
+  margin-bottom: 1rem !important;
+}
+
+
+.mycard .card-body > span.icon-sec2 i,
+.mycard .card-body > span:first-child i,
+.mycard .card-body > span.icon-sec2 span,
+.mycard .card-body > span:first-child span {
+  font-size: 1.4rem !important;
+  line-height: 1 !important;
+}
+
+.mycard .card-body > .d-flex.justify-content-between {
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: flex-start !important;
+  gap: 12px !important;
+  margin-bottom: 25px !important;
+}
+
+
+.mycard .card-body h4 {
+  margin-bottom: 0.5rem !important;
+}
+
+.mycard .card-body > p {
+  font-size: 0.9rem !important;
+  line-height: 1.5 !important;
+  margin-bottom: 1.25rem !important;
+}
+
+
+.mycard .card-body > div:last-child:not(.flex-wrap) {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 100% !important;
+  text-align: center !important;
+  margin-top: auto !important;
+  gap: 20px !important;
+}
+
+.mycard .card-body > div:last-child:not(.flex-wrap) > .d-flex {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 100% !important;
+  text-align: center !important;
+}
+
+.mycard .w-img-card {
+  width: 80px !important;
+  height: 80px !important;
+  object-fit: cover !important;
+  border-radius: 50% !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  margin-bottom: 10px !important;
+}
+
+.mycard .card-body > div:last-child:not(.flex-wrap) > div:last-child {
+  display: none !important;
+}
+
+
+.mycard .card-body > div.flex-wrap {
+  display: flex !important;
+  flex-direction: row !important;
+  flex-wrap: wrap !important;
+  align-items: center !important;
+  justify-content: flex-start !important;
+  gap: 8px !important;
+  margin-top: auto !important;
+  width: 100% !important;
+}
+
+
+.mycard .card-body .font-span-sec-3 {
+  font-size: 0.75rem !important;
+  font-weight: 500 !important;
+  padding: 4px 10px !important;
+  border-radius: 50px !important;
+  white-space: nowrap !important;
+  display: inline-block !important;
+}
+
+
+.sec-5 .-mybtn {
+  font-size: 10px;
+  padding: 17px 10px 17px 0px;
+  font-weight: 700;
+}
+
+.mycard .card-body > span.icon-sec2 > span {
+  font-size: 10px !important;
+  font-weight: 800 !important;
+  padding: 0 !important;
+  text-align: center !important;
+}
+
 .sec-4 .card.mycard {
   position: relative;
   overflow: hidden;
@@ -623,67 +750,99 @@ nav .dropdown-menu .box {
   transition: all 0.3s;
 }
 
-.sec-5 .dr {
-  width: 100%;
+.sec-5 {
+  width: 100% !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
 }
+
+.sec-5 .container,
+.sec-5 .container-fluid {
+  max-width: 100% !important;
+  width: 100% !important;
+  padding-left: 15px !important;
+  padding-right: 15px !important;
+}
+
+
+.sec-5 .dr {
+  width: 100% !important;
+  margin-bottom: 12px;
+}
+
+
 .sec-5 .-mybtn {
-  width: 100%;
+  width: 100% !important;
   background: white;
   color: #7c2d12;
   font-weight: 700;
-  font-size: 20px;
-  padding: 18px 25px;
-  border: 1px solid var(--border-primary);
-  border-radius: 15px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  transition: background-color 0.25s;
-}
-.sec-5 .-mybtn:hover {
-  background-color: #f9fafb;
-  border-color: var(--mega-icon-color);
-}
-.sec-5 .-mybtn.show {
-  border-bottom: none !important;
-  border-radius: 14px 14px 0 0 !important;
+  font-size: clamp(15px, 2.5vw, 20px) !important;
+  padding: 16px 20px !important;
+  border: 1px solid var(--border-primary, #e5e7eb);
+  border-radius: 16px !important;
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+  text-align: left;
+  transition: all 0.25s ease;
 }
 
+.sec-5 .-mybtn:hover {
+  background-color: #f9fafb;
+}
+
+.sec-5 .-mybtn.show {
+  border-bottom: none !important;
+  border-radius: 16px 16px 0 0 !important;
+}
+
+
 .sec-5 .-mybtn.dropdown-toggle::after {
-  display: none;
+  display: none !important;
+}
+
+
+.sec-5 .-mybtn span.icon-drop {
+  color: var(--primary-color, #ea580c);
+  background-color: var(--mega-icon-color, #ffedd5);
+  width: 36px;
+  height: 36px;
+  min-width: 36px; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  margin-left: 10px;
 }
 
 .sec-5 .-mybtn i {
-  transition: all 0.5s;
+  transition: transform 0.4s ease;
+  font-size: 14px;
 }
-.sec-5 .-mybtn span.icon-drop {
-  color: var(--primary-color);
-  background-color: var(--mega-icon-color);
-  padding: 6px 8px;
-  border-radius: 50%;
-}
+
 .sec-5 .-mybtn.show i {
   transform: rotate(180deg);
 }
 
+
 .sec-5 .dropdown-menu.men {
   width: 100% !important;
-  border-radius: 0px 0px 14px 14px;
+  border-radius: 0px 0px 16px 16px !important;
   background: white;
-  border: 1px solid var(--mega-icon-color);
-  border-top: none;
+  border: 1px solid var(--border-primary, #e5e7eb);
+  border-top: none !important;
   box-sizing: border-box !important;
-  padding: 0 20px 20px 20px;
-  margin-top: 0;
+  padding: 0 20px 20px 20px !important;
+  margin-top: 0 !important;
   position: static !important;
   transform: none !important;
   inset: auto !important;
 }
 
 .sec-5 .item {
-  width: 100%;
+  width: 100% !important;
   color: #4a5565;
-  font-size: clamp(12px, 1.5vw, 15px);
+  font-size: clamp(14px, 1.8vw, 16px) !important;
   line-height: 1.7;
 }
 .sec-6 input:not(.form-check-input),
@@ -768,12 +927,12 @@ nav .dropdown-menu .box {
   margin-left: 5px;
 }
 .sec-6 .part1 {
-  border-top-left-radius: 20px;
-  border-bottom-left-radius: 20px;
+  border-radius: 24px 24px 0 0;
 }
+
 .sec-6 .part2 {
-  border-top-right-radius: 20px;
-  border-bottom-right-radius: 20px;
+  border-radius: 0 0 24px 24px;
+  padding: 30px !important; 
 }
 
 .i-e-sec6 {
